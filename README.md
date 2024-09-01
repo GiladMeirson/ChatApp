@@ -53,6 +53,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Contact
 GiladMeirson - Gilad.meirson@gmail.com
+
 website - https://giladmeirson.site/
 
 Project Link: [https://github.com/GiladMeirson/ChatApp](https://github.com/GiladMeirson/ChatApp)
