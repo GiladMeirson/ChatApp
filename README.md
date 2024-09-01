@@ -56,7 +56,7 @@ GiladMeirson - Gilad.meirson@gmail.com
 
 website - https://giladmeirson.site/
 
-Project Link: [https://github.com/GiladMeirson/ChatApp](https://github.com/GiladMeirson/ChatApp)
+Project Link: https://giladmeirson.github.io/ChatApp/
 
 ## Acknowledgements
 - [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
