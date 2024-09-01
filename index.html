@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Chat Interface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+
+</head>
+<body>
+
+
+    <!-- DARKMODE BUTTON -->
+    <div id="theme-toggle" class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
+
+
+
+
+
+
+
+    <div id="nicknameModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to the Chat</h2>
+            <p>Please choose a nickname to start chatting:</p>
+            <form id="nicknameForm">
+                <input type="text" id="nicknameInput" placeholder="Enter your nickname" required>
+                <button type="submit">Join Chat</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="chatInterface" class="chat-container" style="display: none;">
+        <aside class="chat-sidebar">
+            <div class="sidebar-header">
+                <h2>Connected Users</h2>
+                <button id="closeSidebar" class="close-sidebar">&times;</button>
+            </div>
+            <ul class="user-list" id="userList">
+                <!-- Users will be dynamically added here -->
+            </ul>
+        </aside>
+        <main class="chat-main">
+            <header class="chat-header">
+                <h1>Chat Room</h1>
+                <button id="toggleSidebar" class="toggle-sidebar">☰</button>
+            </header>
+            <section class="chat-messages" id="chatMessages">
+                <!-- Messages will be dynamically added here -->
+            </section>
+            <footer class="chat-input">
+                <form id="chatForm">
+                    <input type="text" id="messageInput" placeholder="Type a message..." required>
+                    <button type="submit">Send</button>
+                </form>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
