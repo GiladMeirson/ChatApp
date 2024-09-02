@@ -150,6 +150,26 @@ function generateUniqueId() {
 }
 
 
+
+// emojies Logics
+function openemojiesModal(){
+    $('#emojiPickerModal').show();
+}
+
+
+function closeEmoteModal(){
+    $('#emojiPickerModal').hide();
+}
+
+$('.emoji-button').click((emote)=>{
+    //console.log(emote.target.innerText);
+    document.getElementById('messageInput').value+=emote.target.innerText;
+})
+// emojies Logics
+
+
+
+
 //dark mode 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');

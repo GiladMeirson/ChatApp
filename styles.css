@@ -31,13 +31,25 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 22px;
     border-bottom: 1px solid #e4e6eb;
 }
 
 .sidebar-header h2 {
     font-size: 1.2em;
     color: #050505;
+}
+#emojiCon{
+    padding-bottom: 10px;
+}
+#emojiOpenModal{
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 7px;
+    padding: 2px;
+}
+#emojiOpenModal:hover{
+    background-color: lightblue;
 }
 
 .close-sidebar {
@@ -46,6 +58,8 @@ body, html {
     border: none;
     font-size: 1.5em;
     cursor: pointer;
+    color: lightcoral;
+    font-weight: 900;
 }
 
 .user-list {
@@ -325,10 +339,10 @@ body {
 
 /* Theme toggle styles */
 .theme-switch-wrapper {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 9999;
+    /* position: fixed;
+    top: 1.1%;
+    left: 40%;
+    z-index: 9999; */
 }
 
 .theme-switch {
@@ -383,6 +397,69 @@ input:checked + .slider:before {
 
 
 
+/* 
+emojies style */
+
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.custom-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.close-buttonx {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.close-buttonx:hover,
+.close-buttonx:focus {
+    color: rgb(194, 86, 86);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.emoji-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 24px;
+}
+.emoji-button{
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 25px;
+}
+#emojiPickerModal h2 {
+    margin-block: 5px;
+    
+}
+
+
+
+
+
+
 /* ................................................ */
 
 :root {
@@ -415,7 +492,7 @@ input:checked + .slider:before {
     --message-received-text: #e4e6eb;
 }
 
-body, .chat-container, .chat-main, .chat-header, .chat-input, .chat-messages, .user-list {
+body, .chat-container, .chat-main, .chat-header, .chat-input, .chat-messages, .user-list,.custom-modal-content {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -429,7 +506,7 @@ body {
     color: var(--primary-text);
 }
 
-.chat-main, .chat-header, .chat-input {
+.chat-main, .chat-header, .chat-input,.custom-modal-content {
     background-color: var(--secondary-bg);
     color: var(--primary-text);
 }
@@ -490,10 +567,10 @@ body {
 
 /* Theme toggle styles remain the same */
 .theme-switch-wrapper {
-    position: fixed;
+    /* position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 9999;
+    z-index: 9999; */
 }
 
 .theme-switch {

@@ -13,15 +13,95 @@
 <body>
 
 
-    <!-- DARKMODE BUTTON -->
-    <div id="theme-toggle" class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
+    <div id="emojiPickerModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <span onclick="closeEmoteModal()" class="close-buttonx">&times;</span>
+            <h2>Select an Emoji</h2>
+            <div class="emoji-container">
+                <button class="emoji-button">&#128512;</button>
+                <button class="emoji-button">&#128513;</button>
+                <button class="emoji-button">&#128514;</button>
+                <button class="emoji-button">&#128515;</button>
+                <button class="emoji-button">&#128516;</button>
+                <button class="emoji-button">&#128517;</button>
+                <button class="emoji-button">&#128518;</button>
+                <button class="emoji-button">&#128519;</button>
+                <button class="emoji-button">&#128520;</button>
+                <button class="emoji-button">&#128521;</button>
+                <button class="emoji-button">&#128522;</button>
+                <button class="emoji-button">&#128523;</button>
+                <button class="emoji-button">&#128524;</button>
+                <button class="emoji-button">&#128525;</button>
+                <button class="emoji-button">&#128526;</button>
+                <button class="emoji-button">&#128527;</button>
+                <button class="emoji-button">&#128528;</button>
+                <button class="emoji-button">&#128529;</button>
+                <button class="emoji-button">&#128530;</button>
+                <button class="emoji-button">&#128531;</button>
+                <button class="emoji-button">&#128532;</button>
+                <button class="emoji-button">&#128533;</button>
+                <button class="emoji-button">&#128534;</button>
+                <button class="emoji-button">&#128535;</button>
+                <button class="emoji-button">&#128536;</button>
+                <button class="emoji-button">&#128537;</button>
+                <button class="emoji-button">&#128538;</button>
+                <button class="emoji-button">&#128539;</button>
+                <button class="emoji-button">&#128540;</button>
+                <button class="emoji-button">&#128541;</button>
+                <button class="emoji-button">&#128542;</button>
+                <button class="emoji-button">&#128543;</button>
+                <button class="emoji-button">&#128544;</button>
+                <button class="emoji-button">&#128545;</button>
+                <button class="emoji-button">&#128546;</button>
+                <button class="emoji-button">&#128547;</button>
+                <button class="emoji-button">&#128548;</button>
+                <button class="emoji-button">&#128549;</button>
+                <button class="emoji-button">&#128550;</button>
+                <button class="emoji-button">&#128551;</button>
+                <button class="emoji-button">&#128552;</button>
+                <button class="emoji-button">&#128553;</button>
+                <button class="emoji-button">&#128554;</button>
+                <button class="emoji-button">&#128555;</button>
+                <button class="emoji-button">&#128556;</button>
+                <button class="emoji-button">&#128557;</button>
+                <button class="emoji-button">&#128558;</button>
+                <button class="emoji-button">&#128559;</button>
+                <button class="emoji-button">&#128560;</button>
+                <button class="emoji-button">&#128561;</button>
+                <button class="emoji-button">&#128562;</button>
+                <button class="emoji-button">&#128563;</button>
+                <button class="emoji-button">&#128564;</button>
+                <button class="emoji-button">&#128565;</button>
+                <button class="emoji-button">&#128566;</button>
+                <button class="emoji-button">&#128567;</button>
+                <button class="emoji-button">&#128568;</button>
+                <button class="emoji-button">&#128569;</button>
+                <button class="emoji-button">&#128570;</button>
+                <button class="emoji-button">&#128571;</button>
+                <button class="emoji-button">&#128572;</button>
+                <button class="emoji-button">&#128573;</button>
+                <button class="emoji-button">&#128574;</button>
+                <button class="emoji-button">&#128575;</button>
+                <button class="emoji-button">&#128576;</button>
+                <button class="emoji-button">&#128577;</button>
+                <button class="emoji-button">&#128578;</button>
+                <button class="emoji-button">&#128579;</button>
+                <button class="emoji-button">&#128580;</button>
+                <button class="emoji-button">&#128581;</button>
+                <button class="emoji-button">&#128582;</button>
+                <button class="emoji-button">&#128583;</button>
+                <button class="emoji-button">&#128584;</button>
+                <button class="emoji-button">&#128585;</button>
+                <button class="emoji-button">&#128586;</button>
+                <button class="emoji-button">&#128587;</button>
+                <button class="emoji-button">&#128588;</button>
+                <button class="emoji-button">&#128589;</button>
+                <button class="emoji-button">&#128590;</button>
+                <button class="emoji-button">&#128591;</button>
+            </div>
+        </div>
     </div>
-
-
+  
 
 
 
@@ -51,12 +131,23 @@
         <main class="chat-main">
             <header class="chat-header">
                 <h1>Chat Room</h1>
+                   <!-- DARKMODE BUTTON -->
+                    <div id="theme-toggle" class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                    <!-- DARKMODE BUTTON -->
                 <button id="toggleSidebar" class="toggle-sidebar">☰</button>
             </header>
             <section class="chat-messages" id="chatMessages">
                 <!-- Messages will be dynamically added here -->
             </section>
             <footer class="chat-input">
+                <div id="emojiCon">
+                    <span onclick="openemojiesModal()" id="emojiOpenModal">😁</span>
+                </div>
                 <form id="chatForm">
                     <input type="text" id="messageInput" placeholder="Type a message..." required>
                     <button type="submit">Send</button>
